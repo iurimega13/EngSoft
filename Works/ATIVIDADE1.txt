@@ -1,0 +1,22 @@
+programa
+{
+	inteiro N;
+	real area;
+	real menor = 0;
+	real R;
+	funcao inicio()
+	{
+		escreva("Quantas áreas serão calculadas? ") leia(N)
+		para(inteiro i = 1; i <= N; i++){
+			escreva("Qual o " + i + " raio? ") leia(R)
+			area = 3.1415 * (R * R )
+			se (menor == 0 ) {
+				menor = area
+			}
+			se (menor > area ) {
+				menor = area
+			}
+		}
+		escreva("A menor área foi: " + menor)
+	}
+}
